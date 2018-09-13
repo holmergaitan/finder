@@ -24,9 +24,9 @@ Request:
 		"content":"0101000011010110"
 	}
 ```
-expectedCelebrityId is the celebrity id that will be returned in the final excecution.
-contenSize establish the matrix rows and columns size.
-content contains the boolean values of all people combinations, for example:
+-- expectedCelebrityId: is the celebrity id that will be returned in the final excecution.
+-- contenSize: establish the matrix rows and columns size.
+-- content: contains the boolean values of all people combinations, for example:
 
 The string 0101000011010110 will be respresented in a matrix like this
 ```
