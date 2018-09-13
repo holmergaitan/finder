@@ -1,7 +1,5 @@
 package com.finder.service.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +17,7 @@ import com.finder.service.FinderService;
  * @author holmer.gaitan
  */
 @RestController
-@RequestMapping("/")
+@RequestMapping("/finder")
 public class FinderController {
 
 	/** The finder service. */
@@ -53,28 +51,5 @@ public class FinderController {
 
 		return new FinderResponseDTO(finderDTO, finderDTO.getExptectedCelebrityId(), result,
 				result.equals(finderDTO.getExptectedCelebrityId()));
-	}
-
-	/**
-	 * Find celebrity.
-	 *
-	 * @param finderDTOList the finder DTO list
-	 * @return the list
-	 */
-//	@RequestMapping(value = "/", method = RequestMethod.POST)
-	public List<FinderResponseDTO> findCelebrity(final @RequestBody List<FinderRequestDTO> finderDTOList) {
-
-//		final Integer[][] matrixContent = finderService.buildMatrixContent(finderDTO.getContentSize(),
-//				finderDTO.getContent());
-//
-//		final Integer result = finderService.findCelebrity(finderDTO.getContentSize(), matrixContent);
-//
-//		return new FinderResponseDTO(finderDTO, finderDTO.getExptectedCelebrityId(), result,
-//				result.equals(finderDTO.getExptectedCelebrityId()));
-
-		finderDTOList.stream().forEach(dto -> finderService.findCelebrity(dto.getContentSize(),
-				finderService.buildMatrixContent(dto.getContentSize(), dto.getContent())));
-
-		return null;
 	}
 }
