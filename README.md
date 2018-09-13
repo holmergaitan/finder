@@ -35,4 +35,4 @@ The string 0101000011010110 will be respresented in a matrix like this
 	   [1(B)][   0  ] [   0  ] [   0  ]
 	   [2(C)][   0  ] [   1  ] [   0  ]
 ```
-It means that person A(with 0 id) and person C knows B.
+It means that person A(with 0 id) and person C knows B, and B is the celebrity.
