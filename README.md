@@ -30,11 +30,9 @@ content contains the boolean values of all people combinations, for example:
 
 The string 0101000011010110 will be respresented in a matrix like this
 ```
-		     [ 0(A) ] [ 1(B) ] [ 2(C) ]
+		 [ 0(A) ] [ 1(B) ] [ 2(C) ]
 	   [0(A)][   0  ] [   1  ] [   0  ]
 	   [1(B)][   0  ] [   0  ] [   0  ]
-	   [2(C)][   0  ] [	  1  ] [   0  ]
+	   [2(C)][   0  ] [   1  ] [   0  ]
 ```
 It means that person A(with 0 id) and person C knows B.
----
-
