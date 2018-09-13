@@ -8,10 +8,10 @@ package com.finder.model;
  */
 public class FinderResponseDTO {
 
-	/** The orginal request. */
-	private FinderRequestDTO orginalRequest;
+	/** The original request. */
+	private FinderRequestDTO originalRequest;
 
-	/** The exptected celebrity id. */
+	/** The expected celebrity id. */
 	private Integer exptectedCelebrityId;
 
 	/** The celebrity id found. */
@@ -23,54 +23,55 @@ public class FinderResponseDTO {
 	/**
 	 * Instantiates a new finder response DTO.
 	 *
-	 * @param originalRequest      the original request
-	 * @param exptectedCelebrityId the exptected celebrity id
-	 * @param celebrityIdFound     the celebrity id found
-	 * @param finalResult          the final result
+	 * @param originalRequest     the original request
+	 * @param expectedCelebrityId the expected celebrity id
+	 * @param celebrityIdFound    the celebrity id found
+	 * @param finalResult         the final result
 	 */
-	public FinderResponseDTO(FinderRequestDTO originalRequest, Integer exptectedCelebrityId, Integer celebrityIdFound,
-			boolean finalResult) {
+	public FinderResponseDTO(
+			FinderRequestDTO originalRequest, Integer expectedCelebrityId, 
+			Integer celebrityIdFound, boolean finalResult) {
 
-		this.orginalRequest = originalRequest;
-		this.exptectedCelebrityId = exptectedCelebrityId;
+		this.originalRequest = originalRequest;
+		this.exptectedCelebrityId = expectedCelebrityId;
 		this.celebrityIdFound = celebrityIdFound;
 		this.finalResult = finalResult;
 	}
 
 	/**
-	 * Gets the orginal request.
+	 * Gets the original request.
 	 *
-	 * @return the orginal request
+	 * @return the original request
 	 */
-	public FinderRequestDTO getOrginalRequest() {
+	public FinderRequestDTO getOriginalRequest() {
 
-		return orginalRequest;
+		return originalRequest;
 	}
 
 	/**
-	 * Sets the orginal request.
+	 * Sets the original request.
 	 *
-	 * @param orginalRequest the new orginal request
+	 * @param originalRequest the new original request
 	 */
-	public void setOrginalRequest(FinderRequestDTO orginalRequest) {
+	public void setOriginalRequest(FinderRequestDTO originalRequest) {
 
-		this.orginalRequest = orginalRequest;
+		this.originalRequest = originalRequest;
 	}
 
 	/**
-	 * Gets the exptected celebrity id.
+	 * Gets the expected celebrity id.
 	 *
-	 * @return the exptected celebrity id
+	 * @return the expected celebrity id
 	 */
-	public Integer getExptectedCelebrityId() {
+	public Integer getExpectedCelebrityId() {
 
 		return exptectedCelebrityId;
 	}
 
 	/**
-	 * Sets the exptected celebrity id.
+	 * Sets the expected celebrity id.
 	 *
-	 * @param exptectedCelebrityId the new exptected celebrity id
+	 * @param exptectedCelebrityId the new expected celebrity id
 	 */
 	public void setExptectedCelebrityId(Integer exptectedCelebrityId) {
 
