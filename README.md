@@ -3,6 +3,7 @@
 
 ## Configuration
 
+Required java version: 8
 To build and start the project, follow next steps:
 
 1. Run $mvn clean
